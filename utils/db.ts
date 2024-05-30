@@ -54,18 +54,8 @@ export const initialSettings = {
 
 export type Settings = typeof initialSettings
 
-export const textGenModels: Model[] = [{
-    id: 'gemini-pro',
-    name: 'Gemini Pro',
-    provider: 'google',
-    type: 'chat'
-}, {
-    id: 'gpt-3.5-turbo',
-    name: 'ChatGPT-3.5-turbo',
-    provider: 'openai',
-    endpoint: 'chat/completions',
-    type: 'chat'
-}, {
+export const textGenModels: Model[] = [
+{
     id: '@cf/qwen/qwen1.5-14b-chat-awq',
     name: 'qwen1.5-14b-chat-awq',
     provider: 'workers-ai',
@@ -89,6 +79,17 @@ export const textGenModels: Model[] = [{
     id: '@hf/thebloke/neural-chat-7b-v3-1-awq',
     name: 'neural-chat-7b-v3-1-awq',
     provider: 'workers-ai',
+    type: 'chat'
+},{
+    id: 'gemini-pro',
+    name: 'Gemini Pro',
+    provider: 'google',
+    type: 'chat'
+}, {
+    id: 'gpt-3.5-turbo',
+    name: 'ChatGPT-3.5-turbo',
+    provider: 'openai',
+    endpoint: 'chat/completions',
     type: 'chat'
 }, {
     id: '@hf/nexusflow/starling-lm-7b-beta',
